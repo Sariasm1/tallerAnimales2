@@ -25,6 +25,7 @@ public abstract class Animal {
 
     public String getNombre() {
         return nombre;
+        
     }
     
 
