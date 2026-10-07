@@ -17,6 +17,9 @@ public class TallerAnimales {
        
        animalGato.hacerSonido();
        animalPerro.hacerSonido();
+       
+       animalGato.comer();
+       animalPerro.comer();
         
     }
 }
