@@ -12,6 +12,7 @@ public class Gato extends Animal {
 
      public Gato(String nombre, String orden, String clase, String genero) {
         super(nombre, orden, clase, genero);
+        reino();
     }    
      
     @Override

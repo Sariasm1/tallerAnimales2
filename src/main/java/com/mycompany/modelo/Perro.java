@@ -12,7 +12,10 @@ public class Perro extends Animal {
 
      public Perro(String nombre, String orden, String clase, String genero) {
         super(nombre, orden, clase, genero);
+        reino();
     }    
+     
+     
      
     @Override
     public void hacerSonido() {

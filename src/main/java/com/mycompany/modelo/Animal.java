@@ -11,29 +11,35 @@ package com.mycompany.modelo;
 public abstract class Animal {
     
     private static final String reino = "Animalia";
-    private String nombre;
-    private String orden;
-    private String clase;
-    private String genero;
+    private static String nombre;
+    private static String orden;
+    private static String clase;
+    private static String genero;
 
     public Animal(String nombre, String orden, String clase, String genero) {
-        this.nombre = nombre;
-        this.orden = orden;
-        this.clase = clase;
-        this.genero = genero;
-    }
+        Animal.nombre = nombre;
+        Animal.orden = orden;
+        Animal.clase = clase;
+        Animal.genero = genero;
+    } 
 
     public String getNombre() {
-        return nombre;
+        return Animal.nombre;
     }
     
 
    public void hacerSonido() {
-    System.out.println(" Sonido genérico");
+    System.out.println("Sonido genérico");
    }
      
   public static void reino(){
-       
+      System.out.println("-- Animal inicializado --");
+      System.out.println("[ Descripción animal ]");
+      System.out.println("Reion: "+ reino);
+      System.out.println("Nombre: " + Animal.nombre);
+      System.out.println("Orden: " + Animal.orden);
+      System.out.println("Clase: " + Animal.clase);
+      System.out.println("Genero: " + Animal.genero);
   }
       
   public void comer() {

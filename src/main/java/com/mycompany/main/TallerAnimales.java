@@ -3,6 +3,7 @@
  */
 
 package com.mycompany.main;
+import com.mycompany.modelo.*;
 
 /**
  *
@@ -11,8 +12,11 @@ package com.mycompany.main;
 public class TallerAnimales {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("hola");
+       Animal animalPerro = new Perro("Huesos", "Carnivoro", "Mamifero", "Canis");
+       Animal animalGato = new Gato("Pelusa", "Carnivoro", "Mamifero", "Felis");
+       
+       animalGato.hacerSonido();
+       animalPerro.hacerSonido();
         
     }
 }
